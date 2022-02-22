@@ -1,6 +1,6 @@
 # Regex: Matching Values using Hex
 
-Expressions are similar to patterns in that they used character combinations to match in strings. A typical expression using the the ^; this symbol ^ is a metacharacter and means "not". For example "a" equates to match lowercase "a", while "^a" has the opposite effect and means to not match lowercase "a".
+Expressions are similar to patterns in that they used character combinations to match in strings. A typical expression using the the `^`; this symbol `^` is a metacharacter and means `not`. For example `a` equates to match lowercase `a`, while `^a` has the opposite effect and means to not match lowercase `a`.
 
 ## Summary
 
