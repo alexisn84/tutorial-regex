@@ -12,6 +12,8 @@ This tutorial is to help the user further understand the components of a regular
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
+- [Flags](#flags)
+- [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
@@ -39,8 +41,17 @@ The `or` operator within a regular expression is defined using the `| `element (
 ### Character Classes
 Character classes are components within the regular expression that tells the code/user what type of characters to expect. The example shows character classes are confined within brackets []. For the example there are 2 character classes: `[a-f0-9]` and `[a-f0-9]` which searches for the same values. The breakdown of what it is searching for is as follows: `a-f` searches for letters `a-f` and `0-9` searches for digits `0-9`.
 
+### Flags
+Flags take time to get the hang of and are used to measure `bits`, the computer language and the arbitrary human-invented based on 10 math. 
+
+### Grouping and Capturing
+`Example`:
+- `(dog){3}`
+
+Grouping treats multiple characters as a single unit. This can proof useful when extracting information using any programming language. This group of data will be exposed in the form of an array. Values can be accessed using an index on the result of the match. For the example above, the unit characters of `dog`, need to repeat 3x as indicated in the {}.
+
 ### Bracket Expressions
-Matches any character in the square brackets. 
+Matches any character in the square brackets. Typically a hyphen is used to describe a set or range of characters e.g. [a-z]. It's possible to use the ^ metacharacter to negate what is in between the brackets.
 
 ### Greedy and Lazy Match
 A greedy match tries to match an element as many times as possible. Whereas, a lazy match tries to match an element as few times as possible. In the above example there is `?` which signifies lazy quantifier. This is referred to a lazy quantifier because it causes the regular expression engine to match as few occurances as possible. 
